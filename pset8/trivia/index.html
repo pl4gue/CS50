@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            function check_q1(answer)
+            {
+               const response = answer === 'falafel' ? 'Correct' : 'Incorrect';
+               response_p = document.querySelector(".response-q1")
+
+               response_p.innerText = response;
+            }
+
+            function check_q2()
+            {
+                const answer = document.querySelector('input').value
+                const response = answer === 'Mr. Beast' ? 'Correct' : 'Incorrect';
+                const response_p = document.querySelector(".response-q2")
+
+                response_p.innerText = response;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <p>According to the <a href="https://cuberule.com/">The Cube Rule</a> which of these is a sushi?</p>
+                <button onclick="check_q1('pizza')">Pizza</button>
+                <button onclick="check_q1('toast')">Toast</button>
+                <button onclick="check_q1('hotdog')">Hotdog</button>
+                <button onclick="check_q1('falafel')">Falafel Wrap</button>
+                <p class="response-q1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <p>What's the name of the most subscribed youtuber?</p>
+                <input onkeyup='check_q2()' type='text'>
+                <p class="response-q2"></p>
+            </div>
+        </div>
+    </body>
+</html>
