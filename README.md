@@ -9,7 +9,8 @@ This repository is structured in the way I organized my CS50 codespace when taki
 
 - Each "Week" has it's own folder, containing the it's Lab's and Problem Set's exercises.
 - No "answers.txt" file is provided to those problems sets who need them to be submited, check the [Disclaimer](#-disclaimer-) section for more information, if it isn't obvious why.
-- My final project source code is [here](https://github.com/pl4g/CS50/tree/main/final-project). <!--A live preview is available [here](future link).-->
+- My final project source code is [here](https://github.com/pl4g/CS50/tree/main/final-project).
+- A live preview is available [here](https://plague.is-a.dev/CS50/).
 
 <br>
 
